@@ -58,6 +58,65 @@ a:hover {
   display: none;
 }
 
+.contenido-header {
+  width: 50%;
+  position: relative;
+  top: 15%;
+  left: 10%;
+}
+
+h2 {
+  font-size: 4rem;
+  margin-bottom: 1%;
+}
+
+p {
+  font-size: 1.6rem;
+  text-align: justify;
+}
+
+form {
+  margin-top: 3%;
+}
+
+input {
+  font-size: 1.6rem;
+  width: 50%;
+}
+
+/*
+input[type='text']{
+  width: 50%;
+}
+*/
+
+form button {
+  display: block;
+  color: rgb(60, 70, 21);
+  background-color: rgb(243, 233, 95);
+  margin-top: 3%;
+  width: 50%;
+  font-size: 1.6rem;
+  font-weight: 600;
+  border: 1px solid rgb(243, 233, 95);
+  border-radius: 3%;
+}
+
+.contenedor-acerca {
+  display: flex;
+  justify-content: space-around;
+}
+
+h3 {
+  color: black;
+  font-size: 2rem;
+}
+
+.quienes-somos,
+.historia,
+.mision-vision {
+  width: 30%;
+}
 @media only screen and (max-width: 768px) {
   .icono {
     display: block; /* el display flex del padre (nav) se sobrepone 
@@ -76,12 +135,16 @@ a:hover {
   }
 
   nav ul {
-    background-color: rgb(241, 217, 185);
+    background-color: rgba(241, 217, 185, 0.377);
     display: none;
+    border-radius: 5%;
   }
 
   .mostrar {
     display: block;
+    position: absolute;
+    right: 15%;
+    top: 5%;
   }
 
   nav ul li {
