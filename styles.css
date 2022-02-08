@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@700&family=Roboto:wght@300&display=swap");
 
 * {
   margin: 0;
@@ -45,11 +46,56 @@ a {
 
 .logo h1 {
   color: rgb(243, 233, 95);
+  font-family: "Balsamiq Sans", cursive;
 }
 
 a:hover {
   color: rgb(243, 233, 95);
   transition: 0.5s ease-in-out;
 }
+
+.icono {
+  display: none;
+}
+
+@media only screen and (max-width: 768px) {
+  .icono {
+    display: block; /* el display flex del padre (nav) se sobrepone 
+    se indica el display para mostrarlo*/
+    position: absolute;
+    right: 40px;
+    top: 19px;
+  }
+
+  header {
+    background-repeat: repeat-y;
+  }
+
+  nav {
+    flex-direction: column;
+  }
+
+  nav ul {
+    background-color: rgb(241, 217, 185);
+    display: none;
+  }
+
+  .mostrar {
+    display: block;
+  }
+
+  nav ul li {
+    display: block;
+    padding: 1% 0;
+  }
+
+  nav ul li a {
+    color: black;
+  }
+}
+
+/* display: none; impide que se muestre en la pagina
+visibility: hidden; oculta el elemento pero igual afecta la pagina(dimensiones)
+*/
 
 /*vh y vw es relativo al tamanio de la pantalla*/
