@@ -215,20 +215,20 @@ h4 {
 
 footer {
   background-color: black;
-  height: 3.5rem;
+  flex-basis: auto;
   display: flex;
   justify-content: space-between;
 }
 
 .redes-sociales {
-  width: 20%;
+  width: 30%;
   display: flex;
 }
 
 .redes-sociales a i {
   position: relative;
   top: 1rem;
-  margin-left: 1rem;
+  margin: 0rem 0rem 1rem 1rem;
 }
 
 .creador {
@@ -273,6 +273,24 @@ footer {
 
   nav ul li a {
     color: black;
+  }
+
+  .contenedor-testimonios {
+    display: flex;
+    flex-direction: column;
+  }
+
+  footer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .datos-cliente {
+    padding-top: 1rem;
+  }
+
+  .contenedor-acerca {
+    flex-direction: column;
   }
 }
 
