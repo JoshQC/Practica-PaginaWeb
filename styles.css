@@ -10,11 +10,11 @@
   color: rgb(255, 255, 255);
 }
 
-h1 {
+.titulo-Veterinaria {
   font-size: 3.6rem;
 }
 
-header {
+.encabezado {
   height: 100vh;
   background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.6)),
     url("https://cdn.euroinnova.edu.es/img/subidasEditor/dise%C3%B1o-sin-t%C3%ADtulo-1619767538.webp");
@@ -42,33 +42,33 @@ header {
   padding: 5rem;
 }
 
-nav {
+.navegador {
   padding: 2% 8%;
   display: flex;
   justify-content: space-between;
 }
 
-ul {
+.elementos-navegador {
   list-style: none;
   margin-top: 2rem;
 }
 
-li {
+.elemento-navegador {
   display: inline;
   margin-left: 1.5rem;
 }
 
-a {
+.texto-elemento-navegador {
   text-decoration: none;
   font-size: 1.6rem;
 }
 
-.logo h1 {
+.logo .titulo-Veterinaria {
   color: rgb(243, 233, 95);
   font-family: "Balsamiq Sans", cursive;
 }
 
-a:hover {
+.texto-elemento-navegador:hover {
   color: rgb(243, 233, 95);
   transition: 0.5s ease-in-out;
 }
@@ -84,17 +84,17 @@ a:hover {
   left: 10%;
 }
 
-h2 {
+.sub-titulo-Veterinaria {
   font-size: 4rem;
   margin-bottom: 1%;
 }
 
-p {
+.parrafo {
   font-size: 1.6rem;
   text-align: justify;
 }
 
-form {
+.formulario-veterinaria {
   margin-top: 3%;
 }
 
@@ -103,13 +103,11 @@ input {
   width: 50%;
 }
 
-/*
-input[type='text']{
-  width: 50%;
+input[type="text"] {
+  color: black;
 }
-*/
 
-form button {
+.formulario-veterinaria button {
   display: block;
   color: rgb(60, 70, 21);
   background-color: rgb(243, 233, 95);
@@ -126,11 +124,11 @@ form button {
   justify-content: space-around;
 }
 
-h3 {
+.titulo-subseccion {
   font-size: 3rem;
 }
 
-h4 {
+.descripcion-subseccion {
   font-size: 1.7rem;
 }
 
@@ -221,7 +219,7 @@ footer {
 }
 
 .redes-sociales {
-  width: 30%;
+  width: 20%;
   display: flex;
 }
 
@@ -245,11 +243,11 @@ footer {
     top: 19px;
   }
 
-  header {
+  .encabezado {
     background-repeat: repeat-y;
   }
 
-  nav {
+  .navegador {
     flex-direction: column;
   }
 
@@ -266,12 +264,15 @@ footer {
     top: 5%;
   }
 
-  nav ul li {
+  .navegador .elementos-navegador .elemento-navegador {
     display: block;
     padding: 1% 0;
   }
 
-  nav ul li a {
+  .navegador
+    .elementos-navegador
+    .elemento-navegador
+    .texto-elemento-navegador {
     color: black;
   }
 
@@ -281,8 +282,8 @@ footer {
   }
 
   footer {
-    flex-direction: column;
-    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
   }
 
   .datos-cliente {
@@ -291,6 +292,13 @@ footer {
 
   .contenedor-acerca {
     flex-direction: column;
+  }
+
+  .contenedor-testimonios {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 8rem;
   }
 }
 
